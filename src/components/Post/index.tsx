@@ -43,7 +43,7 @@ export function Post({ ImageUrl, description }: propsType) {
             >
               <Status>
                 <TwitterIcon />
-                Twitter
+                Twitterr
               </Status>
             </TwitterShareButton>
           </Icons>
