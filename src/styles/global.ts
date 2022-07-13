@@ -5,6 +5,7 @@ export default createGlobalStyle`
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+text-decoration: none;
 
 color: var(--white);
 }
@@ -20,7 +21,7 @@ height: 100%;
 *, bottom, input{
 border: 0;
 background: none;
-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, Arial, sans-serif;
+font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
 html { 

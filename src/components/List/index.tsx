@@ -1,22 +1,26 @@
 import React from 'react';
 
-import { Container, Item, Title } from './styles';
+import { Container, Item } from './styles';
 
 interface Props {
+  description?: string;
+  elements?: React.ReactNode[];
+  link?: string;
   title: string;
-  elements: React.ReactNode[];
 }
 
-export function List({ title, elements }: Props) {
+export function List({ description, elements, link, title }: Props) {
   return (
     <Container>
-      <Item>
-        <Title>{title}</Title>
-      </Item>
-
-      {elements.map((element, index) => (
-        <Item key={index}>{element}</Item>
-      ))}
+      <a href={link}>
+        <Item>
+          <h1>{title}</h1>
+          <h2>{description}</h2>
+        </Item>
+        {elements?.map((element, index) => (
+          <Item key={index}>{element}</Item>
+        ))}
+      </a>
     </Container>
   );
 }

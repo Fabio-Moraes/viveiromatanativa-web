@@ -1,4 +1,4 @@
-import { Container, Avatar, Info, FollowButton } from './styles';
+import { Container, Avatar, Info } from './styles';
 
 interface Props {
   name: string;
@@ -14,9 +14,6 @@ export function FollowSuggestion({ name, nickname }: Props) {
           <strong>{name}</strong>
           <span>{nickname}</span>
         </Info>
-      </div>
-      <div>
-      <FollowButton outlined>Seguir</FollowButton>
       </div>
     </Container>
   );

@@ -2,12 +2,9 @@ import StickBox from 'react-sticky-box';
 
 import { List } from '../List';
 import { FollowSuggestion } from '../FollowSuggestion';
-import { News } from '../News';
+import { Post } from '../Post';
 
-import {
-  Container,
-  Body
-} from './styles';
+import { Container, Body } from './styles';
 
 export function SideBar() {
   return (
@@ -17,26 +14,50 @@ export function SideBar() {
           <List
             title="Equipe"
             elements={[
-              <FollowSuggestion name="James Junio" nickname="@james_jinio" />,
-              <FollowSuggestion name="Lucas Alves" nickname="@lucas_alves" />,
-              <FollowSuggestion name="Edson Mateus" nickname="@edson_mateus" />,
+              <FollowSuggestion name="James Junio" nickname="@james_junio" />,
+              <FollowSuggestion name="Maria Regina" nickname="@Maria_Regina" />,
             ]}
           />
+
           <List
-            title="Talvez você curta"
-            elements={[<News />, <News />, <News />]}
+            title="IPÊ"
+            link="https://www.ipe.org.br/"
+            description="Pesquisa, Educação e Negócios Sustentáveis para a conservação da biodiversidade brasileira."
+            elements={[
+              <Post
+                key={String(2)}
+                ImageUrl={
+                  'https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/IPE-na-Virada-Sustentavel-em-parceria-com-UMAPAZ.jpg'
+                }
+              />,
+            ]}
           />
+
           <List
-            title="Talvez você curta"
-            elements={[<News />, <News />, <News />]}
+            title="ROLEX"
+            description={`As mudas são cultivadas a partir de mais de 100 espécies de árvores nativas nos viveiros.`}
+            elements={[
+              <Post
+                key={String(6)}
+                ImageUrl={
+                  'https://img.welt.de/img/bildergalerien/mobile233462856/7941352947-ci16x9-w1200/The-Rolex-Awards-for-Enterprise-Laury-Cullen-Brazil-2004-laure.jpg'
+                }
+              />,
+            ]}
           />
+
           <List
-            title="Talvez você curta"
-            elements={[<News />, <News />, <News />]}
-          />
-          <List
-            title="Talvez você curta"
-            elements={[<News />, <News />, <News />]}
+            title="IMPARCIAL"
+            link="https://www.imparcial.com.br/noticias/liderancas-femininas-despontam-nos-viveiros-do-pontal-do-paranapanema,45655"
+            description={`imparcialLideranças femininas despontam nos viveiros do Pontal do Paranapanema`}
+            elements={[
+              <Post
+                key={String(6)}
+                ImageUrl={
+                  'https://www.imparcial.com.br//assets/images/galeria/1628897230.jpg'
+                }
+              />,
+            ]}
           />
         </Body>
       </StickBox>

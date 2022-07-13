@@ -14,7 +14,7 @@ import { FacebookShareButton, TwitterShareButton } from 'next-share';
 
 interface propsType {
   ImageUrl: string;
-  description: string;
+  description?: string;
 }
 
 export function Post({ ImageUrl, description }: propsType) {
@@ -22,9 +22,9 @@ export function Post({ ImageUrl, description }: propsType) {
     <Container>
       <Body>
         <Content>
-          <Description>{description}</Description>
+        {description && <Description>{description}</Description>}
           <ImageContent src={ImageUrl} />
-          <Icons>
+          {/* <Icons>
             <FacebookShareButton
               quote={'234234234234'}
               url={'https://viveiromatanativa.com.br'}
@@ -46,7 +46,7 @@ export function Post({ ImageUrl, description }: propsType) {
                 Twitter
               </Status>
             </TwitterShareButton>
-          </Icons>
+          </Icons> */}
         </Content>
       </Body>
     </Container>

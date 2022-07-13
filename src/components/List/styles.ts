@@ -1,29 +1,39 @@
 import styled from 'styled-components';
 
+interface PropsType {
+  href: string;
+}
+
 export const Container = styled.div`
-display: flex;
-flex-direction: column;
-background: var(--secondary);
-border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary);
+  border-radius: 14px;
 `;
 
 export const Item = styled.div`
-padding: 10px 16px;
+  padding: 10px 16px;
 
-& + div {
+  /* & + div {
     border-top: 1px solid var(--outline);
-}
+} */
 
-&:first-child {
-    padding-top: 13px;
-}
+  > h1 {
+    font-weight: border;
+    font-size: 18px;
+    padding-bottom: 5px;
+   
+  }
 
-&:last-child {
-    padding-bottom: 17px;
-}
-`;
+  > h2 {
+    font-weight: border;
+    font-size: 15px;
+    font-weight: normal;
+  }
 
-export const Title = styled.span`
-font-weight: border;
-font-size:  16px;
+  > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 `;

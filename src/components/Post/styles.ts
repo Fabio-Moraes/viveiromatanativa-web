@@ -46,6 +46,8 @@ export const ImageContent = styled.img`
   background: var(--outline);
   border-radius: 14px;
 
+  transition: 1s;
+
   cursor: pointer;
   &:hover {
     opacity: 0.7;
