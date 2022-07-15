@@ -17,10 +17,6 @@ export const Tab = styled.div`
   cursor: pointer;
 
   color: var(--twitter);
-
-  &:hover {
-    background: var(--twitter-dark-hover);
-  }
 `;
 
 export const Tweets = styled.div`

@@ -9,6 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   background: var(--secondary);
   border-radius: 14px;
+  padding-bottom: 2px;
 `;
 
 export const Item = styled.div`
@@ -22,7 +23,6 @@ export const Item = styled.div`
     font-weight: border;
     font-size: 18px;
     padding-bottom: 5px;
-   
   }
 
   > h2 {
