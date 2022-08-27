@@ -5,7 +5,7 @@ interface Props {
   nickname: string;
 }
 
-export function FollowSuggestion({ name, nickname }: Props) {
+export function TeamCard({ name, nickname }: Props) {
   return (
     <Container>
       <div>

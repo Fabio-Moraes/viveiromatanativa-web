@@ -5,7 +5,7 @@ import {
   SearchWrapper,
   SearchIcon,
 } from './styles';
-import { ListPlants } from '../ListPlants';
+import { PlantCard } from '../PlantCard';
 import PLANTS from '../../Api/plants';
 
 interface ListProps {
@@ -54,7 +54,7 @@ export function SearchBar() {
       <ListContainer>
         {foundUsers && foundUsers.length > 0 ? (
           foundUsers.map((PLANTS, index) => (
-            <ListPlants
+            <PlantCard
               key={String(index)}
               title={PLANTS.title}
               image={PLANTS.image}

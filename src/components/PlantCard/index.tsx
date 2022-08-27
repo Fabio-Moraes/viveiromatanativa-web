@@ -1,12 +1,12 @@
 import { ItemContainer, Thumbnail } from './styles';
 
-interface ListProps {
+interface PropsCard {
   image: string;
   title: string;
   description: string;
 }
 
-export function ListPlants(props: ListProps) {
+export function PlantCard(props: PropsCard) {
   return (
     <ItemContainer>
       <Thumbnail src={props.image} />

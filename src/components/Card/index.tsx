@@ -9,7 +9,7 @@ interface Props {
   title: string;
 }
 
-export function List({ description, elements, link, title }: Props) {
+export function Card({ description, elements, link, title }: Props) {
   return (
     <Container>
       <a href={link}>

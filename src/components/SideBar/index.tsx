@@ -1,7 +1,7 @@
 import StickBox from 'react-sticky-box';
 
-import { List } from '../List';
-import { FollowSuggestion } from '../FollowSuggestion';
+import { Card } from '../Card';
+import { TeamCard } from '../TeamCard';
 import { Post } from '../Post';
 
 import { Container, Body } from './styles';
@@ -11,15 +11,15 @@ export function SideBar() {
     <Container>
       <StickBox>
         <Body>
-          <List
+          <Card
             title="Equipe"
             elements={[
-              <FollowSuggestion name="James Junio" nickname="@james_junio" />,
-              <FollowSuggestion name="Maria Regina" nickname="@Maria_Regina" />,
+              <TeamCard name="James Junio" nickname="@james_junio" />,
+              <TeamCard name="Maria Regina" nickname="@Maria_Regina" />,
             ]}
           />
 
-          <List
+          <Card
             title="IPÊ"
             link="https://www.ipe.org.br/"
             description="Pesquisa, Educação e Negócios Sustentáveis para a conservação da biodiversidade brasileira."
@@ -33,7 +33,7 @@ export function SideBar() {
             ]}
           />
 
-          <List
+          <Card
             title="ROLEX"
             description={`As mudas são cultivadas a partir de mais de 100 espécies de árvores nativas nos viveiros.`}
             elements={[
@@ -46,7 +46,7 @@ export function SideBar() {
             ]}
           />
 
-          <List
+          <Card
             title="IMPARCIAL"
             link="https://www.imparcial.com.br/noticias/liderancas-femininas-despontam-nos-viveiros-do-pontal-do-paranapanema,45655"
             description={`imparcialLideranças femininas despontam nos viveiros do Pontal do Paranapanema`}
